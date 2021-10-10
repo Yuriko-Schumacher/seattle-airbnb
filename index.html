@@ -13,8 +13,20 @@
 			font-family: Roboto, sans-serif;
 		}
 
+		.title {
+			margin: 100px auto;
+			text-align: center;
+		}
+
+		.charts {
+			display: flex;
+			transform: scale(0.8);
+			margin: -60px auto auto -120px;
+			gap: 50px;
+		}
+
 		.legend {
-			margin: 50px auto -50px 0;
+			/* margin: 50px auto -50px 0; */
 			width: 250px;
 		}
 
@@ -23,8 +35,7 @@
 			justify-content: space-between;
 		}
 
-		.maps {
-			transform: scale(0.8);
+		.maps__maps {
 			display: flex;
 			justify-content: space-around;
 			gap: 50px;
@@ -35,139 +46,145 @@
 		<div class="container">
 			<div class="title">
 				<h1>Airbnb listing counts in Seattle, WA by neighborhood</h1>
-				<h2>From Oct. 2020 to Sep. 2021</h2>
-				<div class="legend">
-					<div class="legend-title">
-						<strong>Listing Counts</strong>
-					</div>
-					<div class="legend-color-bar">
-						<svg width="250" height="13">
-							<g>
-								<rect
-									width="250"
-									height="13"
-									style="fill: url('#g-nmap')"
-								></rect>
-							</g>
-							<defs>
-								<linearGradient id="g-nmap" y2="0" x2="1">
-									<stop
-										offset="0%"
-										stop-color="rgb(255, 236, 236)"
-									></stop>
-									<stop
-										offset="6.25%"
-										stop-color="rgb(255, 226, 227)"
-									></stop>
-									<stop
-										offset="12.5%"
-										stop-color="rgb(255, 217, 218)"
-									></stop>
-									<stop
-										offset="18.75%"
-										stop-color="rgb(255, 207, 209)"
-									></stop>
-									<stop
-										offset="25%"
-										stop-color="rgb(255, 197, 200)"
-									></stop>
-									<stop
-										offset="31.25%"
-										stop-color="rgb(255, 187, 192)"
-									></stop>
-									<stop
-										offset="37.5%"
-										stop-color="rgb(255, 177, 183)"
-									></stop>
-									<stop
-										offset="43.75%"
-										stop-color="rgb(255, 167, 174)"
-									></stop>
-									<stop
-										offset="50%"
-										stop-color="rgb(255, 157, 166)"
-									></stop>
-									<stop
-										offset="56.25%"
-										stop-color="rgb(255, 146, 158)"
-									></stop>
-									<stop
-										offset="62.5%"
-										stop-color="rgb(255, 135, 149)"
-									></stop>
-									<stop
-										offset="68.75%"
-										stop-color="rgb(255, 124, 141)"
-									></stop>
-									<stop
-										offset="75%"
-										stop-color="rgb(255, 112, 133)"
-									></stop>
-									<stop
-										offset="81.25%"
-										stop-color="rgb(255, 99, 125)"
-									></stop>
-									<stop
-										offset="87.5%"
-										stop-color="rgb(255, 86, 117)"
-									></stop>
-									<stop
-										offset="93.75%"
-										stop-color="rgb(255, 70, 110)"
-									></stop>
-									<stop
-										offset="100%"
-										stop-color="rgb(255, 51, 102)"
-									></stop>
-								</linearGradient>
-							</defs>
-						</svg>
-					</div>
-					<div class="legend-labels">
-						<div>18</div>
-						<div>842</div>
-					</div>
-				</div>
+				<h2>In Oct. 2020 and Sep. 2021</h2>
+				<p>By Sharmila Kuthunur and Yuriko Schumacher</p>
 			</div>
-			<div class="maps">
-				<div id="sep-2021" class="map">
-					<iframe
-						title="Sep. 2021"
-						aria-label="Map"
-						id="datawrapper-chart-XbKvq"
-						src="https://datawrapper.dwcdn.net/XbKvq/8/"
-						scrolling="no"
-						frameborder="0"
-						style="border: none"
-						width="400"
-						height="750"
-					></iframe>
-				</div>
-				<!-- <div id="fep-2021" class="map">
-					<iframe
-						title="Feb. 2021"
-						aria-label="Map"
-						id="datawrapper-chart-mGAB6"
-						src="https://datawrapper.dwcdn.net/mGAB6/5/"
-						scrolling="no"
-						frameborder="0"
-						style="border: none"
-						width="400"
-						height="750"
-					></iframe>
-				</div> -->
-				<div id="oct-2020" class="map">
-					<iframe
-						title="Oct. 2020"
-						aria-label="Map"
-						id="datawrapper-chart-m92h0"
-						src="https://datawrapper.dwcdn.net/m92h0/4/"
-						scrolling="no"
-						frameborder="0"
-						style="border: none"
-						width="400"
-						height="750"
-					></iframe>
+			<div class="charts">
+				<div class="maps">
+					<div class="legend">
+						<div class="legend-title">
+							<strong>Listing Counts</strong>
+						</div>
+						<div class="legend-color-bar">
+							<svg width="250" height="13">
+								<g>
+									<rect
+										width="250"
+										height="13"
+										style="fill: url('#g-nmap')"
+									></rect>
+								</g>
+								<defs>
+									<linearGradient id="g-nmap" y2="0" x2="1">
+										<stop
+											offset="0%"
+											stop-color="rgb(255, 236, 236)"
+										></stop>
+										<stop
+											offset="6.25%"
+											stop-color="rgb(255, 226, 227)"
+										></stop>
+										<stop
+											offset="12.5%"
+											stop-color="rgb(255, 217, 218)"
+										></stop>
+										<stop
+											offset="18.75%"
+											stop-color="rgb(255, 207, 209)"
+										></stop>
+										<stop
+											offset="25%"
+											stop-color="rgb(255, 197, 200)"
+										></stop>
+										<stop
+											offset="31.25%"
+											stop-color="rgb(255, 187, 192)"
+										></stop>
+										<stop
+											offset="37.5%"
+											stop-color="rgb(255, 177, 183)"
+										></stop>
+										<stop
+											offset="43.75%"
+											stop-color="rgb(255, 167, 174)"
+										></stop>
+										<stop
+											offset="50%"
+											stop-color="rgb(255, 157, 166)"
+										></stop>
+										<stop
+											offset="56.25%"
+											stop-color="rgb(255, 146, 158)"
+										></stop>
+										<stop
+											offset="62.5%"
+											stop-color="rgb(255, 135, 149)"
+										></stop>
+										<stop
+											offset="68.75%"
+											stop-color="rgb(255, 124, 141)"
+										></stop>
+										<stop
+											offset="75%"
+											stop-color="rgb(255, 112, 133)"
+										></stop>
+										<stop
+											offset="81.25%"
+											stop-color="rgb(255, 99, 125)"
+										></stop>
+										<stop
+											offset="87.5%"
+											stop-color="rgb(255, 86, 117)"
+										></stop>
+										<stop
+											offset="93.75%"
+											stop-color="rgb(255, 70, 110)"
+										></stop>
+										<stop
+											offset="100%"
+											stop-color="rgb(255, 51, 102)"
+										></stop>
+									</linearGradient>
+								</defs>
+							</svg>
+						</div>
+						<div class="legend-labels">
+							<div>18</div>
+							<div>842</div>
+						</div>
+					</div>
+					<br />
+					<div class="maps__maps">
+						<div id="sep-2021" class="map">
+							<iframe
+								title="Sep. 2021"
+								aria-label="Map"
+								id="datawrapper-chart-XbKvq"
+								src="https://datawrapper.dwcdn.net/XbKvq/8/"
+								scrolling="no"
+								frameborder="0"
+								style="border: none"
+								width="400"
+								height="750"
+							></iframe>
+						</div>
+						<!-- <div id="fep-2021" class="map">
+            <iframe
+              title="Feb. 2021"
+              aria-label="Map"
+              id="datawrapper-chart-mGAB6"
+              src="https://datawrapper.dwcdn.net/mGAB6/5/"
+              scrolling="no"
+              frameborder="0"
+              style="border: none"
+              width="400"
+              height="750"
+            ></iframe>
+          </div> -->
+						<div id="oct-2020" class="map">
+							<iframe
+								title="Oct. 2020"
+								aria-label="Map"
+								id="datawrapper-chart-m92h0"
+								src="https://datawrapper.dwcdn.net/m92h0/4/"
+								scrolling="no"
+								frameborder="0"
+								style="border: none"
+								width="400"
+								height="750"
+							></iframe>
+						</div>
+					</div>
 				</div>
 				<div class="summary">
 					<iframe
@@ -179,7 +196,7 @@
 						frameborder="0"
 						style="border: none"
 						width="500"
-						height="750"
+						height="825"
 					></iframe>
 				</div>
 			</div>
