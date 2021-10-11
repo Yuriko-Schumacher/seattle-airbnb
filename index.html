@@ -8,26 +8,39 @@
 		<title>Airbnb listings in Seattle, WA</title>
 	</head>
 	<style>
+		a:link,
+		a:visited {
+			text-decoration: none;
+			color: #ff3366;
+		}
+
+		a:hover {
+			color: #fe9cb4;
+			transition: all 0.4s ease;
+		}
+
 		.container {
 			max-width: 80%;
 			margin: 0 auto;
 			font-family: Roboto, sans-serif;
+			font-size: 18px;
 		}
 
 		.title {
 			margin: 100px auto;
-			text-align: center;
+			max-width: 80%;
+		}
+
+		iframe {
+			transform: scale(0.9);
 		}
 
 		.charts {
-			display: flex;
-			transform: scale(0.8);
-			margin: -60px auto auto -120px;
-			gap: 50px;
+			margin: 0 auto;
 		}
 
 		.legend {
-			/* margin: 50px auto -50px 0; */
+			margin: 0 auto;
 			width: 250px;
 		}
 
@@ -38,16 +51,32 @@
 
 		.maps__maps {
 			display: flex;
-			justify-content: space-around;
-			gap: 10px;
+			justify-content: center;
+			gap: 30px;
 			margin: 0 auto;
+		}
+
+		.summary {
+			max-width: 80%;
+			display: flex;
+			align-items: center;
+			margin: 100px auto;
+			gap: 50px;
+		}
+
+		.summary > iframe {
+			flex: 0 0 500px;
+		}
+
+		.analysis {
+			padding: 20px;
 		}
 	</style>
 	<body>
 		<div class="container">
 			<div class="title">
-				<h1>Airbnb listing counts in Seattle, WA by neighborhood</h1>
-				<h2>In Oct. 2020 and Sep. 2021</h2>
+				<h2>Airbnb listing counts in Seattle, WA, by neighborhood</h2>
+				<h3>In October 2020 and Septempber 2021</h3>
 				<p>By Sharmila Kuthunur and Yuriko Schumacher</p>
 			</div>
 			<div class="charts">
@@ -187,7 +216,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="summary">
+			</div>
+			<div class="summary">
+				<div class="summary-chart">
 					<iframe
 						title="Change in number of Airbnb listings between Oct. 2020 and Sep. 2021 in Seattle, WA "
 						aria-label="Interactive line chart"
@@ -199,6 +230,35 @@
 						width="500"
 						height="825"
 					></iframe>
+				</div>
+				<div class="analysis">
+					<p>
+						Downtown area is famously known as the home of Amazon's
+						campus, as well as the Space Needle, a well-known
+						tourist location. The loss of Downtown's Airbnb listings
+						could be attributed to Amazon's continuing work from
+						home policy, prompting employees to move to other states
+						with low cost of living.
+					</p>
+					<p>
+						According to
+						<a
+							href="https://www.google.com/url?q=https://www.seattletimes.com/life/travel/the-tourists-have-returned-to-washington-state-but-some-areas-are-recovering-more-quickly-than-others/&sa=D&source=editors&ust=1633976443068000&usg=AOvVaw08wHaLYX-aVAQm7WKE4HY3"
+							target="_blank"
+							>The Seattle Times</a
+						>, tourism in Seattle dropped in urban areas like
+						Downtown and increased, surprisingly, in rural areas
+						around lakes and parks. In 2020, Seattle had the second
+						lowest hotel occupancy rate at 30.8%, with the last
+						place being Vancouver, B.C.
+					</p>
+					<p>
+						The rise in Airbnb listings near the university
+						district, where the University of Washington campus is
+						located, could be attributed to the return of in-person
+						classes, prompting students and their families to occupy
+						homes and hotels in the area.
+					</p>
 				</div>
 			</div>
 		</div>
