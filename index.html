@@ -27,7 +27,7 @@
 		}
 
 		.title {
-			margin: 100px auto;
+			margin: 100px auto 0;
 			max-width: 800px;
 		}
 
@@ -37,17 +37,6 @@
 
 		.charts {
 			margin: 0 auto;
-		}
-
-		.legend {
-			font-size: 14px;
-			margin: -20px auto -20px auto;
-			width: 250px;
-		}
-
-		.legend-labels {
-			display: flex;
-			justify-content: space-between;
 		}
 
 		.maps__maps {
@@ -76,7 +65,10 @@
 	<body>
 		<div class="container">
 			<div class="title">
-				<h2>Airbnb listing counts in Seattle, WA, by neighborhood</h2>
+				<h2>
+					Airbnb listing counts difference in Seattle, WA, by
+					neighborhood
+				</h2>
 				<h3>Between October 2020 and September 2021</h3>
 				<p>By Sharmila Kuthunur and Yuriko Schumacher</p>
 				<br />
@@ -88,116 +80,51 @@
 					District.
 				</p>
 				<p>
-					Hover over the areas to see the number of listings for each
-					neighborhood.
+					Downtown area is famously known as the home of Amazon's
+					campus, as well as the Space Needle, a well-known tourist
+					location. The loss of Downtown's Airbnb listings could be
+					attributed to Amazon's continuing work from home policy,
+					prompting employees to move to other states with low cost of
+					living.
+				</p>
+				<p>
+					According to
+					<a
+						href="https://www.google.com/url?q=https://www.seattletimes.com/life/travel/the-tourists-have-returned-to-washington-state-but-some-areas-are-recovering-more-quickly-than-others/&sa=D&source=editors&ust=1633976443068000&usg=AOvVaw08wHaLYX-aVAQm7WKE4HY3"
+						target="_blank"
+						>The Seattle Times</a
+					>, tourism in Seattle dropped in urban areas like Downtown
+					and increased, surprisingly, in rural areas around lakes and
+					parks. In 2020, Seattle had the second lowest hotel
+					occupancy rate at 30.8%, with the last place being
+					Vancouver, B.C.
+				</p>
+				<p>
+					The rise in Airbnb listings near the university district,
+					where the University of Washington campus is located, could
+					be attributed to the return of in-person classes, prompting
+					students and their families to occupy homes and hotels in
+					the area.
+				</p>
+				<p>
+					Hover over the areas to see the difference in numbe of
+					listings for each neighborhood.
 				</p>
 			</div>
 			<div class="charts">
 				<div class="maps">
-					<div class="legend">
-						<div class="legend-title">
-							<strong>Listing Counts</strong>
-						</div>
-						<div class="legend-color-bar">
-							<svg width="250" height="13">
-								<g>
-									<rect
-										width="250"
-										height="13"
-										style="fill: url('#g-nmap')"
-									></rect>
-								</g>
-								<defs>
-									<linearGradient id="g-nmap" y2="0" x2="1">
-										<stop
-											offset="0%"
-											stop-color="rgb(255, 236, 236)"
-										></stop>
-										<stop
-											offset="6.25%"
-											stop-color="rgb(255, 226, 227)"
-										></stop>
-										<stop
-											offset="12.5%"
-											stop-color="rgb(255, 217, 218)"
-										></stop>
-										<stop
-											offset="18.75%"
-											stop-color="rgb(255, 207, 209)"
-										></stop>
-										<stop
-											offset="25%"
-											stop-color="rgb(255, 197, 200)"
-										></stop>
-										<stop
-											offset="31.25%"
-											stop-color="rgb(255, 187, 192)"
-										></stop>
-										<stop
-											offset="37.5%"
-											stop-color="rgb(255, 177, 183)"
-										></stop>
-										<stop
-											offset="43.75%"
-											stop-color="rgb(255, 167, 174)"
-										></stop>
-										<stop
-											offset="50%"
-											stop-color="rgb(255, 157, 166)"
-										></stop>
-										<stop
-											offset="56.25%"
-											stop-color="rgb(255, 146, 158)"
-										></stop>
-										<stop
-											offset="62.5%"
-											stop-color="rgb(255, 135, 149)"
-										></stop>
-										<stop
-											offset="68.75%"
-											stop-color="rgb(255, 124, 141)"
-										></stop>
-										<stop
-											offset="75%"
-											stop-color="rgb(255, 112, 133)"
-										></stop>
-										<stop
-											offset="81.25%"
-											stop-color="rgb(255, 99, 125)"
-										></stop>
-										<stop
-											offset="87.5%"
-											stop-color="rgb(255, 86, 117)"
-										></stop>
-										<stop
-											offset="93.75%"
-											stop-color="rgb(255, 70, 110)"
-										></stop>
-										<stop
-											offset="100%"
-											stop-color="rgb(255, 51, 102)"
-										></stop>
-									</linearGradient>
-								</defs>
-							</svg>
-						</div>
-						<div class="legend-labels">
-							<div>18</div>
-							<div>842</div>
-						</div>
-					</div>
 					<br />
 					<div class="maps__maps">
 						<iframe
-							title="September 2021"
+							title="Change in number of Airbnb listings between October 2020 and September 2021 in Seattle, WA"
 							aria-label="Map"
-							id="datawrapper-chart-XbKvq"
-							src="https://datawrapper.dwcdn.net/XbKvq/11/"
+							id="datawrapper-chart-9x2a0"
+							src="https://datawrapper.dwcdn.net/9x2a0/2/"
 							scrolling="no"
 							frameborder="0"
 							style="border: none"
 							width="400"
-							height="750"
+							height="929"
 						></iframe>
 						<!-- <div id="fep-2021" class="map">
             <iframe
@@ -212,64 +139,18 @@
               height="750"
             ></iframe>
           </div> -->
-						<div id="oct-2020" class="map">
-							<iframe
-								title="October 2020"
-								aria-label="Map"
-								id="datawrapper-chart-m92h0"
-								src="https://datawrapper.dwcdn.net/m92h0/7/"
-								scrolling="no"
-								frameborder="0"
-								style="border: none"
-								width="400"
-								height="750"
-							></iframe>
-						</div>
+						<iframe
+							title="Change in number of Airbnb listings between October 2020 and September 2021 in Seattle, WA "
+							aria-label="Interactive line chart"
+							id="datawrapper-chart-prc9i"
+							src="https://datawrapper.dwcdn.net/prc9i/18/"
+							scrolling="no"
+							frameborder="0"
+							style="border: none"
+							width="500"
+							height="929"
+						></iframe>
 					</div>
-				</div>
-			</div>
-			<div class="summary">
-				<div class="summary-chart">
-					<iframe
-						title="Change in number of Airbnb listings between Oct. 2020 and Sep. 2021 in Seattle, WA "
-						aria-label="Interactive line chart"
-						id="datawrapper-chart-prc9i"
-						src="https://datawrapper.dwcdn.net/prc9i/17/"
-						scrolling="no"
-						frameborder="0"
-						style="border: none"
-						width="500"
-						height="825"
-					></iframe>
-				</div>
-				<div class="analysis">
-					<p>
-						Downtown area is famously known as the home of Amazon's
-						campus, as well as the Space Needle, a well-known
-						tourist location. The loss of Downtown's Airbnb listings
-						could be attributed to Amazon's continuing work from
-						home policy, prompting employees to move to other states
-						with low cost of living.
-					</p>
-					<p>
-						According to
-						<a
-							href="https://www.google.com/url?q=https://www.seattletimes.com/life/travel/the-tourists-have-returned-to-washington-state-but-some-areas-are-recovering-more-quickly-than-others/&sa=D&source=editors&ust=1633976443068000&usg=AOvVaw08wHaLYX-aVAQm7WKE4HY3"
-							target="_blank"
-							>The Seattle Times</a
-						>, tourism in Seattle dropped in urban areas like
-						Downtown and increased, surprisingly, in rural areas
-						around lakes and parks. In 2020, Seattle had the second
-						lowest hotel occupancy rate at 30.8%, with the last
-						place being Vancouver, B.C.
-					</p>
-					<p>
-						The rise in Airbnb listings near the university
-						district, where the University of Washington campus is
-						located, could be attributed to the return of in-person
-						classes, prompting students and their families to occupy
-						homes and hotels in the area.
-					</p>
 				</div>
 			</div>
 		</div>
